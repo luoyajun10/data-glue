@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>datatunnel</artifactId>
+        <groupId>com.datatunnel</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>datatunnel-sink</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>datatunnel-sink-common</module>
+        <module>datatunnel-sink-hbase</module>
+        <module>datatunnel-sink-kudu</module>
+        <module>datatunnel-sink-es</module>
+        <module>datatunnel-sink-mysql</module>
+    </modules>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.datatunnel</groupId>
+            <artifactId>datatunnel-core</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

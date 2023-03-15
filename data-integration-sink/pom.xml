@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>data-integration</artifactId>
+        <groupId>com.data.integration</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>data-integration-sink</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>data-integration-sink-common</module>
+        <module>data-integration-sink-hbase</module>
+        <module>data-integration-sink-kudu</module>
+        <module>data-integration-sink-es</module>
+        <module>data-integration-sink-mysql</module>
+    </modules>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.data.integration</groupId>
+            <artifactId>data-integration-core</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

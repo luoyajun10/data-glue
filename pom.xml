@@ -4,14 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.datatunnel</groupId>
-    <artifactId>datatunnel</artifactId>
+    <groupId>com.data.integration</groupId>
+    <artifactId>data-integration</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0-SNAPSHOT</version>
     <modules>
-        <module>datatunnel-core</module>
-        <module>datatunnel-sink</module>
-        <module>datatunnel-examples</module>
+        <module>data-integration-core</module>
+        <module>data-integration-sink</module>
+        <module>data-integration-examples</module>
     </modules>
 
     <properties>
